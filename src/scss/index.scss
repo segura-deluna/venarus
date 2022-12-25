@@ -1,0 +1,14 @@
+@import 'var';
+@import 'mixins';
+
+@include font-face('Roboto', '../assets/fonts/Roboto-Light', 300, normal);
+@include font-face('Roboto', '../assets/fonts/Roboto-Regular', 400, normal);
+@include font-face('Roboto', '../assets/fonts/Roboto-Medium', 500, normal);
+@include font-face('Merriweather', '../assets/fonts/Merriweather-Bold', 700, normal);
+@import 'settings';
+
+//particles
+@import 'header';
+@import 'hero';
+
+@import "footer";

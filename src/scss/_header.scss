@@ -1,0 +1,70 @@
+.header {
+  width: 100%;
+  padding: 30px 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background-color: $white;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__logo {
+    max-width: 203px;
+  }
+
+  &__service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 222px;
+  }
+
+  &__pay {
+    width: 130px;
+    height: 44px;
+    border-radius: $btn-sm-radius;
+    background-color: $loulou;
+    color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.nav {
+  position: relative;
+
+  &__burger {
+    width: 66px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &_icon {
+      display: block;
+      height: 9.5px;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  visibility: hidden;
+  top: -200px;
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+

@@ -1,0 +1,73 @@
+.about {
+
+
+  &__stroke {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 3975px;
+    height: 95px;
+    padding: 16px 0 22px;
+    border-top: 1px solid $loulou;
+    border-bottom: 1px solid $loulou;
+
+    &_text {
+      width: 2000px;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 56px;
+      text-transform: uppercase;
+      color: $loulou;
+      animation: 50s linear stroke-to-right infinite;
+  }
+
+  &__dignity {
+    &_item {
+
+    }
+
+    &_icon {
+
+    }
+
+    &_text {
+
+    }
+  }
+
+  &__description {
+  }
+
+  &__instruction {
+    &_title {
+    }
+
+    &_text {
+    }
+
+    &_link {
+    }
+  }
+
+  &__worth {
+    &_item {
+    }
+
+    &_icon {
+    }
+
+    &_text {
+    }
+  }
+}
+
+@keyframes stroke-to-right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

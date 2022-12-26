@@ -32,6 +32,12 @@
     padding: 30px 55px 15px;
     background-color: $white;
     opacity: .7;
+    visibility: visible;
+    transition: visibility .7s ease-in-out;
+
+    &.close {
+      visibility: hidden;
+    }
 
     &_text {
       font-weight: 300;

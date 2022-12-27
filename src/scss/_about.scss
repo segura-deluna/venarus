@@ -1,6 +1,5 @@
 .about {
 
-
   &__stroke {
     position: relative;
     display: flex;
@@ -21,6 +20,7 @@
       text-transform: uppercase;
       color: $loulou;
       animation: 50s linear stroke-to-right infinite;
+    }
   }
 
   &__dignity {

@@ -328,6 +328,9 @@ h1, h2, h3, p {
   color: #fff;
 }
 
+.about {
+  padding-bottom: 100px;
+}
 .about__stroke {
   position: relative;
   display: flex;
@@ -349,6 +352,108 @@ h1, h2, h3, p {
   color: #47093E;
   animation: 50s linear stroke-to-right infinite;
 }
+.about__dignity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 108px 0 128px;
+}
+.about__dignity_item {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 154.8%;
+}
+.about__dignity_item:nth-child(3) {
+  max-width: 360px;
+}
+.about__dignity_icon {
+  width: 67px;
+  height: 67px;
+  flex-shrink: 0;
+  fill: transparent;
+  stroke: #47093E;
+  margin-right: 30px;
+}
+.about__dignity_icon-sm {
+  position: absolute;
+  bottom: 10px;
+  right: -6px;
+  width: 30px;
+  height: 30px;
+  fill: transparent;
+  stroke: #47093E;
+  cursor: pointer;
+}
+.about__description {
+  display: flex;
+  justify-content: space-between;
+}
+.about__instruction {
+  width: 100%;
+  max-width: 260px;
+}
+.about__instruction_title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 45px;
+}
+.about__instruction_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 154.8%;
+  color: #777;
+  margin-bottom: 15px;
+}
+.about__instruction_link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #47093E;
+}
+.about__worth {
+  width: 100%;
+  max-width: 848px;
+}
+.about__worth_item {
+  display: flex;
+  align-items: center;
+  padding: 30px 30px 30px 98px;
+  border-top: 1px solid #47093E;
+}
+.about__worth_item:nth-last-child(1) {
+  border-bottom: 1px solid #47093E;
+}
+.about__worth_item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.about__worth_item:nth-child(2) .about__worth_icon {
+  margin-left: 48px;
+}
+.about__worth_icon {
+  width: 134px;
+  height: 134px;
+}
+.about__worth_text {
+  width: 100%;
+  max-width: 344px;
+  margin-left: 60px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  color: #000;
+}
+
 @keyframes stroke-to-right {
   0% {
     transform: translate(0, 0);

@@ -515,7 +515,6 @@ h1, h2, h3, p {
   color: #000;
 }
 .info__description {
-  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -526,7 +525,79 @@ h1, h2, h3, p {
   grid-template-areas: "pf dg pl" "pf dg pl" "pf dg pl" "pf fc fc" "pf fc fc";
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  margin-bottom: 35px;
 }
+.info__card-link {
+  display: block;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.info__card-link:nth-child(1) {
+  grid-area: pf;
+}
+.info__card-link:nth-child(1) .card-info {
+  width: 260px;
+  height: 457px;
+}
+.info__card-link:nth-child(2) {
+  grid-area: dg;
+}
+.info__card-link:nth-child(2) .card-info {
+  width: 260px;
+  height: 260px;
+}
+.info__card-link:nth-child(3) {
+  grid-area: pl;
+}
+.info__card-link:nth-child(3) .card-info {
+  width: 260px;
+  height: 260px;
+}
+.info__card-link:nth-child(4) {
+  grid-area: fc;
+}
+.info__card-link:nth-child(4) .card-info {
+  width: 556px;
+  height: 165px;
+  background: #47093E;
+  transition: 0.5s ease-in-out;
+}
+.info__card-link:hover .card-info__title {
+  color: #47093E;
+}
+.info__card-link:hover .card-info__filter {
+  transform: translateY(-100%);
+}
+.info__card-link:hover:nth-child(4) .card-info {
+  color: #47093E;
+  background: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%);
+}
+.info__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 260px;
+  padding: 20px 0;
+  border: 1px solid #47093E;
+  border-radius: 33.5px;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+.info__more:hover {
+  background-color: #47093E;
+}
+.info__more:hover .info__more_link {
+  color: #fff;
+}
+.info__more_link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #47093E;
+  transition: 0.5s ease-in-out;
+}
+
 .card-info {
   position: relative;
   z-index: 3;
@@ -534,29 +605,10 @@ h1, h2, h3, p {
   justify-content: left;
   align-items: flex-start;
   padding: 28px;
-  border-radius: 18px;
-  overflow: hidden;
 }
 .card-info:nth-child(1) {
-  grid-area: pf;
   width: 260px;
   height: 457px;
-}
-.card-info:nth-child(2) {
-  grid-area: dg;
-  width: 260px;
-  height: 260px;
-}
-.card-info:nth-child(3) {
-  grid-area: pl;
-  width: 260px;
-  height: 260px;
-}
-.card-info:nth-child(4) {
-  grid-area: fc;
-  background-color: #47093E;
-  width: 556px;
-  height: 165px;
 }
 .card-info__title {
   position: relative;
@@ -574,6 +626,7 @@ h1, h2, h3, p {
   left: 0;
   top: 0;
   background: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%);
+  transition: 0.5s ease-in-out;
 }
 .card-info__img {
   position: absolute;

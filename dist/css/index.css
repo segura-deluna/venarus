@@ -462,3 +462,123 @@ h1, h2, h3, p {
     transform: translate(-100%, 0);
   }
 }
+.expert {
+  padding: 60px 0 100px;
+}
+.expert__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.expert__description {
+  width: 100%;
+  max-width: 260px;
+}
+.expert__title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 26px;
+}
+.expert__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 154.8%;
+  color: #777;
+}
+.slider-expert {
+  width: 850px;
+  height: 620px;
+}
+.slider-expert__wrapper {
+  width: 100%;
+}
+.slider-expert__item {
+  width: 100%;
+}
+
+.info {
+  padding: 70px 0 100px;
+}
+.info__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.info__title {
+  width: 100%;
+  max-width: 260px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #000;
+}
+.info__description {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.info__cards {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "pf dg pl" "pf dg pl" "pf dg pl" "pf fc fc" "pf fc fc";
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.card-info {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 28px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.card-info:nth-child(1) {
+  grid-area: pf;
+  width: 260px;
+  height: 457px;
+}
+.card-info:nth-child(2) {
+  grid-area: dg;
+  width: 260px;
+  height: 260px;
+}
+.card-info:nth-child(3) {
+  grid-area: pl;
+  width: 260px;
+  height: 260px;
+}
+.card-info:nth-child(4) {
+  grid-area: fc;
+  background-color: #47093E;
+  width: 556px;
+  height: 165px;
+}
+.card-info__title {
+  position: relative;
+  z-index: 3;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 100%;
+  color: #fff;
+}
+.card-info__filter {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%);
+}
+.card-info__img {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+.expert {
+  padding: 60px 0 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  &__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: $black;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.8%;
+    color: $text-light;
+  }
+
+  &__slider {
+  }
+}
+
+.slider-expert {
+  width: 850px;
+  height: 620px;
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+  }
+}

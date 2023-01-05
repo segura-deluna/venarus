@@ -33,7 +33,6 @@ import replace from 'gulp-replace'
 
 const scssToCss = gulpSass(sass)
 
-// server
 let dev = false
 
 const path = {

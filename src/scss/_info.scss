@@ -110,7 +110,7 @@
     border: 1px solid $loulou;
     border-radius: $btn-radius;
     background-color: transparent;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
 
     &:hover {
       background-color: $loulou;
@@ -125,7 +125,7 @@
       font-size: 18px;
       line-height: 21px;
       color: $loulou;
-      transition: .5s ease-in-out;
+      transition: .3s ease-in-out;
     }
   }
 }

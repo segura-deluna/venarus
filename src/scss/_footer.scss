@@ -1,0 +1,59 @@
+.footer {
+  &__banner {
+    padding: 25px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $banner-bg;
+
+    &_text {
+      width: 100%;
+      max-width: 1260px;
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__wrapper {
+    padding: 66px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  &__error {
+  }
+
+  &__cookie {
+  }
+
+  &__address {
+  }
+
+  &__socials {
+  }
+
+  &__social {
+    &_link {
+    }
+
+    &_icon {
+    }
+  }
+
+  &__logo {
+    &_icon {
+    }
+
+    &_text {
+    }
+  }
+}

@@ -21,39 +21,68 @@
     padding: 66px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   &__item {
     width: 100%;
-    max-width: 330px;
+    max-width: 300px;
   }
 
-  &__error {
-  }
-
+  &__error,
   &__cookie {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    text-decoration-line: underline;
+    color: $boulder;
+    margin-bottom: 45px;
   }
 
   &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $gray;
   }
 
   &__socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 36px;
   }
 
   &__social {
     &_link {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      &:nth-child(1) {
+        width: 32px;
+        height: 20px;
+      }
     }
 
     &_icon {
+
     }
   }
 
   &__logo {
+    display: flex;
+    gap: 15px;
+
     &_icon {
     }
 
     &_text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $boulder;
     }
   }
 }
